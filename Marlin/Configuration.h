@@ -250,9 +250,9 @@
   #define CUSTOM_MACHINE_NAME "Tronxy XY-2PRO M"
   // My config optimisation
   #define S_CURVE_ACCELERATION
-  #define DEFAULT_Kp 18.33
-  #define DEFAULT_Ki 1.15
-  #define DEFAULT_Kd 73.12
+  #define DEFAULT_Kp 16.22
+  #define DEFAULT_Ki 1.03
+  #define DEFAULT_Kd 64.06
 
 #elif XY2_V5_255_NO_TITAN_TMC
   #define MOTHERBOARD BOARD_CHITU3D_V5
@@ -400,7 +400,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Fischer, X5SA Pro V1.0" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -847,15 +847,15 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify between 1 and HOTENDS values per array.
     // If fewer than EXTRUDER values are provided, the last element will be repeated.
-    #define DEFAULT_Kp_LIST {  22.20,  22.20 }
-    #define DEFAULT_Ki_LIST {   1.08,   1.08 }
-    #define DEFAULT_Kd_LIST { 114.00, 114.00 }
+    #define DEFAULT_Kp_LIST {  16.22,  16.22 }
+    #define DEFAULT_Ki_LIST {   1.03,   1.03 }
+    #define DEFAULT_Kd_LIST {  64.06,  64.06 }
   #else
     // If we did not set specific parameters then we use one of the default one
     #ifndef DEFAULT_Kp
-      #define DEFAULT_Kp  22.20
-      #define DEFAULT_Ki   1.08
-      #define DEFAULT_Kd 114.00
+      #define DEFAULT_Kp  16.22
+      #define DEFAULT_Ki   1.03
+      #define DEFAULT_Kd  64.06
     #endif
   #endif
 #endif // PIDTEMP
@@ -895,9 +895,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  #define DEFAULT_bedKp 146.30
+  #define DEFAULT_bedKi 25.54
+  #define DEFAULT_bedKd 563.0
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -2328,7 +2328,7 @@
  *
  * :{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cz':'Czech', 'da':'Danish', 'de':'German', 'el':'Greek', 'el_gr':'Greek (Greece)', 'es':'Spanish', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French', 'gl':'Galician', 'hr':'Croatian', 'hu':'Hungarian', 'it':'Italian', 'jp_kana':'Japanese', 'ko_KR':'Korean (South Korea)', 'nl':'Dutch', 'pl':'Polish', 'pt':'Portuguese', 'pt_br':'Portuguese (Brazilian)', 'ro':'Romanian', 'ru':'Russian', 'sk':'Slovak', 'sv':'Swedish', 'tr':'Turkish', 'uk':'Ukrainian', 'vi':'Vietnamese', 'zh_CN':'Chinese (Simplified)', 'zh_TW':'Chinese (Traditional)' }
  */
-#define LCD_LANGUAGE en
+#define LCD_LANGUAGE de
 
 /**
  * LCD Character Set
